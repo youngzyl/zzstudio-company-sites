@@ -1,0 +1,148 @@
+<main id="main">
+
+  <section class="page-head">
+    <div class="shell">
+      <div class="page-head__inner">
+        <p class="crumbs"><a href="index.html">Home</a><span aria-hidden="true">/</span>Contact</p>
+        <p class="eyebrow">Contact</p>
+        <h1 class="display" style="font-size:clamp(2.1rem,4.6vw,3.3rem)">Tell us what you are trying to build.</h1>
+        <p class="lede">Describe the corpus, the workflow and the constraint that matters most. If a 30-minute call is enough to be useful, we will say so on the first reply.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--flush">
+    <div class="shell contact">
+      <div class="contact__aside">
+        <h2 class="h3" style="font-family:var(--sans)">Direct lines</h2>
+
+        <ul class="contact__list">
+          <li><span class="k">Email</span><span class="v"><a class="link" href="mailto:hello@zzstudio.youngzyl.me">hello@zzstudio.youngzyl.me</a></span></li>
+          <li><span class="k">Hours</span><span class="v"><span class="mono">UTC+8</span> · Mon–Fri, 09:00–18:00 Taipei</span></li>
+          <li><span class="k">Languages</span><span class="v">English, 繁體中文</span></li>
+          <li><span class="k">Studio</span><span class="v">Taipei, Taiwan</span></li>
+          <li><span class="k">Reply</span><span class="v">Within one business day</span></li>
+        </ul>
+
+        <ul class="ticks">
+          <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span>NDA and DPA signed <strong>before</strong> any dataset changes hands.</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span>No sales sequence — a senior engineer reads every enquiry.</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span>If we are the wrong studio, we will name one who fits better.</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <form class="form" data-contact-form="hello@zzstudio.youngzyl.me" novalidate>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="name">Name</label>
+              <input class="input" id="name" name="name" type="text" autocomplete="name" placeholder="How should we address you?" required>
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="org">Organisation</label>
+              <input class="input" id="org" name="org" type="text" autocomplete="organization" placeholder="Company or team">
+            </div>
+            <div class="field">
+              <label for="topic">What you need</label>
+              <select class="select" id="topic" name="topic">
+                <option>Hybrid Context Search Vault</option>
+                <option>Personal AI Agent</option>
+                <option>Skill Management</option>
+                <option>Diagnostic (2 weeks)</option>
+                <option>Embedded engineering</option>
+                <option>Advisory / architecture review</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="brief">Brief <span class="hint">— corpus, sources, who will use it, what “working” means</span></label>
+            <textarea class="textarea" id="brief" name="brief" placeholder="We have roughly 40k documents across Confluence, Jira and a file server, and a support team that cannot find the right answer fast enough. What we would like to know is…" required></textarea>
+          </div>
+
+          <div class="form__foot">
+            <p class="form__note">This static site has no backend. Submitting opens your own mail client with the brief filled in — nothing is transmitted to a third party.</p>
+            <button class="btn btn--primary" type="submit">Compose the email <span class="btn__arrow" aria-hidden="true">→</span></button>
+          </div>
+
+          <p class="form__status" data-form-status role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="shell">
+      <div class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow">Before you write</p>
+          <h2 class="h2">Questions we get first.</h2>
+        </div>
+        <div class="sec-head__aside">
+          <p class="lede">If yours is not here, ask it directly — the answer will be more useful than a brochure.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>Do you work with our existing models and infrastructure?</summary>
+          <div class="faq__a">
+            <p>Yes. We are deliberately model-agnostic and infrastructure-agnostic. Hosted frontier models, open-weight models you self-host, or a mix — the vault, agent and skill layers are designed so the generation model is a swappable component.</p>
+            <p>Pipeline and index run in your own cloud account or on your own hardware. We do not host your retrieval logic.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Can it run entirely on-premise or air-gapped?</summary>
+          <div class="faq__a">
+            <p>Yes, including the embedding and reranking models. It costs more engineering effort and typically trades some quality for locality, so we will quantify that trade-off during the diagnostic rather than after the contract.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How do you handle permissions and data residency?</summary>
+          <div class="faq__a">
+            <p>Source-level access control is mapped during ingestion and enforced at retrieval, so the index itself never becomes a way around your existing rules. Data residency is a deployment choice: your region, your account, your keys.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What does a diagnostic actually produce?</summary>
+          <div class="faq__a">
+            <p>A working retrieval or agent prototype over your own corpus, scored against a golden question set we build with your team, plus a written read on feasibility, cost, risk and a scoped build plan. It is yours to keep whether or not you continue with us.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Do you build the front-end as well?</summary>
+          <div class="faq__a">
+            <p>We build the retrieval API, the agent runtime and the evaluation tooling, and we ship reference surfaces (a search UI, a chat surface, an operator console) so the system is usable from week one. For production front-ends inside a larger product we usually pair with your own team or a design partner.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How do you price engagements?</summary>
+          <div class="faq__a">
+            <p>Fixed price per phase, agreed before it starts. The diagnostic is fixed-scope; build phases are quoted per milestone so you can stop between them. Advisory is a monthly retainer. No percentage-of-savings arrangements, no per-seat licensing on anything we write for you.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>We are a small team. Is this only for enterprises?</summary>
+          <div class="faq__a">
+            <p>No — the same three layers apply at any size. Small teams often get the most value from a lean vault plus skill management, because a handful of people cannot afford to re-derive the same answer every week.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>

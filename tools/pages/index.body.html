@@ -1,0 +1,359 @@
+<main id="main">
+
+  <!-- ============================================================ hero -->
+  <section class="hero">
+    <div class="shell hero__grid">
+      <div>
+        <a class="hero__tag" href="about.html">
+          <span class="hero__pip" aria-hidden="true"></span>
+          <b>Taiwan</b> · applied AI studio <span aria-hidden="true">→</span>
+        </a>
+
+        <h1 class="display hero__title">Build AI that <em>remembers</em>, acts, and shows its work.</h1>
+
+        <p class="lede">zzstudio is a Taiwan-based AI solutions studio. We help teams design, ship and take ownership of three things that decide whether AI works inside a real organisation: a context layer that retrieves the right knowledge with permissions intact, agents that can act on it, and a skill layer that keeps getting better.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="contact.html">Book a working session <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn" href="solutions.html">See what we build</a>
+        </div>
+
+        <p class="hero__meta">
+          <span>
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 18s6-5.2 6-9.2A6 6 0 0 0 4 8.8C4 12.8 10 18 10 18Z"></path><circle cx="10" cy="8.6" r="2.2"></circle></svg>
+            Taipei · APAC hours
+          </span>
+          <span>
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="7.2"></circle><path d="M2.8 10h14.4M10 2.8c1.9 2 2.9 4.5 2.9 7.2S11.9 15.2 10 17.2C8.1 15.2 7.1 12.7 7.1 10S8.1 4.8 10 2.8Z"></path></svg>
+            English &amp; 繁體中文
+          </span>
+          <span>
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.2" y="8" width="13.6" height="8.8" rx="1.6"></rect><path d="M6.6 8V6.2a3.4 3.4 0 0 1 6.8 0V8"></path></svg>
+            Your cloud, or your own hardware
+          </span>
+        </p>
+      </div>
+
+      <figure class="figure reveal" aria-label="Diagram: a question is answered by combining lexical and vector retrieval, fused and reranked against permissions, returning a cited answer">
+        <svg class="diagram" viewBox="0 0 420 420" role="img" aria-hidden="true" focusable="false">
+          <!-- question -->
+          <rect class="box box--soft" x="58" y="8" width="304" height="56" rx="4"></rect>
+          <text x="74" y="32">incoming question</text>
+          <text class="t-strong" x="74" y="51">Where does this apply?</text>
+
+          <!-- fan out to both retrieval modes -->
+          <path class="wire" d="M210 64V80"></path>
+          <path class="wire" d="M120 80H300"></path>
+          <path class="wire" d="M120 80V98"></path>
+          <path class="wire" d="M300 80V98"></path>
+          <circle class="node-dot" cx="210" cy="80" r="2.8"></circle>
+
+          <!-- hybrid lanes -->
+          <rect class="box" x="30" y="98" width="180" height="58" rx="4"></rect>
+          <text class="t-strong" x="46" y="124">Lexical · BM25</text>
+          <text class="t-body" x="46" y="142">exact terms, IDs, code</text>
+
+          <rect class="box" x="210" y="98" width="180" height="58" rx="4"></rect>
+          <text class="t-strong" x="226" y="124">Dense · vectors</text>
+          <text class="t-body" x="226" y="142">meaning, paraphrase</text>
+
+          <!-- converge -->
+          <path class="wire" d="M120 156V176"></path>
+          <path class="wire" d="M300 156V176"></path>
+          <path class="wire" d="M120 176H300"></path>
+          <path class="wire" d="M210 176V192"></path>
+          <circle class="node-dot" cx="210" cy="176" r="2.8"></circle>
+
+          <!-- fuse + rerank -->
+          <rect class="box box--accent" x="98" y="192" width="224" height="58" rx="4"></rect>
+          <text class="t-strong" x="114" y="218">Fuse + rerank</text>
+          <text class="t-body" x="114" y="236">permissions · recency</text>
+
+          <!-- answer with citations -->
+          <path class="wire wire--accent" d="M210 250V268"></path>
+          <rect class="box box--soft" x="30" y="268" width="360" height="120" rx="4"></rect>
+          <text class="t-strong" x="48" y="292">Cited answer</text>
+
+          <circle class="node-dot" cx="52" cy="310" r="2.8"></circle>
+          <text class="t-cite" x="66" y="314">policy-v3.md §2.1</text>
+          <text class="t-flag" x="372" y="314" text-anchor="end">internal</text>
+
+          <circle cx="52" cy="334" r="2.8" fill="var(--rule-2)"></circle>
+          <text class="t-cite" x="66" y="338">hr-handbook.pdf p.14</text>
+          <text class="t-flag" x="372" y="338" text-anchor="end">redacted</text>
+
+          <circle cx="52" cy="358" r="2.8" fill="var(--rule-2)"></circle>
+          <text class="t-cite" x="66" y="362">ticket OPS-2291</text>
+          <text class="t-flag" x="372" y="362" text-anchor="end">team</text>
+        </svg>
+        <figcaption class="figure__cap">
+          <span>Retrieval architecture</span>
+          <span>hybrid → fuse → cite</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ======================================================= trust bar -->
+  <section class="trust" aria-label="What we hold ourselves to">
+    <div class="shell trust__inner">
+      <p class="trust__label">Built for teams that can’t ship guesswork</p>
+      <ul class="trust__list">
+        <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg>Permission-aware by default</li>
+        <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg>Evaluated before rollout</li>
+        <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg>No model lock-in</li>
+        <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg>Code and docs handed over</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================================================= offerings -->
+  <section class="section" id="what-we-build">
+    <div class="shell">
+      <div class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow">What we build</p>
+          <h2 class="h2">Three layers, one working system.</h2>
+        </div>
+        <div class="sec-head__aside">
+          <p class="lede">Most AI pilots fail at the seams — retrieval that ignores permissions, an agent with no memory, prompts nobody can version. We build the three layers together, or just the one you’re missing.</p>
+        </div>
+      </div>
+
+      <div class="offer reveal">
+        <p class="offer__num">01</p>
+        <div class="offer__body">
+          <h3 class="h3 offer__title"><a href="solutions.html#vault">Hybrid Context Search Vault</a></h3>
+          <p class="body-copy">An enterprise retrieval layer that treats your knowledge as a governed asset. Lexical and dense search run side by side, results are fused and reranked, and every answer arrives with citations and the access rules already applied. Connect wikis, tickets, drive folders, code and databases over connectors you control.</p>
+          <ul class="tagset">
+            <li class="tag">hybrid retrieval</li>
+            <li class="tag">citations</li>
+            <li class="tag">ACL-aware</li>
+            <li class="tag">audit log</li>
+          </ul>
+        </div>
+        <div class="offer__aside">
+          <ul class="ticks">
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Ingestion pipelines</strong> that keep sources fresh and de-duplicated.</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Retrieval API</strong> your own apps, IDE and chat surfaces can call.</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Evaluation set</strong> built from your real questions, not a demo.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="offer reveal">
+        <p class="offer__num">02</p>
+        <div class="offer__body">
+          <h3 class="h3 offer__title"><a href="solutions.html#agent">Personal AI Agent</a></h3>
+          <p class="body-copy">A private agent that works for one person — with durable memory of their projects, preferences and past decisions. It reads from the vault, calls your tools, drafts, files and follows up, and asks before it does anything irreversible. Each person gets their own agent, not a shared inbox bot.</p>
+          <ul class="tagset">
+            <li class="tag">durable memory</li>
+            <li class="tag">tool use</li>
+            <li class="tag">approval gates</li>
+            <li class="tag">per-user scope</li>
+          </ul>
+        </div>
+        <div class="offer__aside">
+          <ul class="ticks">
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Memory design</strong> — what is remembered, for how long, and how it’s forgotten.</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Tool integrations</strong> with least-privilege credentials you can revoke.</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Traces and replay</strong> so anyone can see why the agent did what it did.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="offer reveal">
+        <p class="offer__num">03</p>
+        <div class="offer__body">
+          <h3 class="h3 offer__title"><a href="solutions.html#skills">Skill Management</a></h3>
+          <p class="body-copy">The layer that stops quality from drifting. Skills — reusable instructions, tools and checks — are written down, versioned, reviewed and measured like software. You get a registry, a test harness and a release process, so a good prompt becomes a maintained asset instead of a screenshot in a chat log.</p>
+          <ul class="tagset">
+            <li class="tag">versioned skills</li>
+            <li class="tag">eval harness</li>
+            <li class="tag">review workflow</li>
+            <li class="tag">rollback</li>
+          </ul>
+        </div>
+        <div class="offer__aside">
+          <ul class="ticks">
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Skill registry</strong> with owners, versions and deprecation dates.</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Regression evals</strong> that run on every change, like CI for behaviour.</span></li>
+            <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 5.5"></path></svg><span><strong>Authoring enablement</strong> so your team writes the next one without us.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top:var(--s6)"><a class="arrow-link" href="solutions.html">Read the solution detail <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 10h11M10.5 5.5 15 10l-4.5 4.5"></path></svg></a></p>
+    </div>
+  </section>
+
+  <!-- ====================================================== capability -->
+  <section class="section">
+    <div class="shell">
+      <div class="sec-head">
+        <p class="eyebrow">How we support you</p>
+        <h2 class="h2">We do the parts that are easy to get wrong.</h2>
+      </div>
+
+      <div class="grid grid--3 reveal">
+        <div class="cell">
+          <svg class="cell__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.4 15.4 21 21"></path></svg>
+          <h3 class="cell__title">Retrieval engineering</h3>
+          <p>Chunking, hybrid search, fusion weights, rerankers and filters — tuned against your documents and your questions, not a benchmark leaderboard.</p>
+        </div>
+        <div class="cell">
+          <svg class="cell__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="4" y="7" width="16" height="12" rx="2.5"></rect><path d="M12 3v4M9 13h.01M15 13h.01"></path></svg>
+          <h3 class="cell__title">Agent architecture</h3>
+          <p>Planning, memory, tool boundaries and human-approval gates designed around your actual workflows and your actual risk appetite.</p>
+        </div>
+        <div class="cell">
+          <svg class="cell__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 19V5M4 19h16"></path><path d="M8 15v-4M12 15V8M16 15v-6M20 15v-2"></path></svg>
+          <h3 class="cell__title">Evaluation &amp; guardrails</h3>
+          <p>Golden question sets, scoring rubrics, hallucination and leakage checks, red-teaming — so “better” becomes a number you can defend.</p>
+        </div>
+        <div class="cell">
+          <svg class="cell__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3 3 7.5l9 4.5 9-4.5L12 3Z"></path><path d="M3 12.5 12 17l9-4.5M3 17 12 21.5 21 17"></path></svg>
+          <h3 class="cell__title">Skill &amp; prompt lifecycle</h3>
+          <p>Authoring standards, review, versioning, regression tests and rollback, so your prompt library behaves like a codebase.</p>
+        </div>
+        <div class="cell">
+          <svg class="cell__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.8"></rect><rect x="3" y="14" width="18" height="6" rx="1.8"></rect><path d="M7 7h.01M7 17h.01"></path></svg>
+          <h3 class="cell__title">Deployment &amp; sovereignty</h3>
+          <p>Run in your VPC, on-premise, or fully air-gapped with local models. Data residency stays where your legal team needs it.</p>
+        </div>
+        <div class="cell">
+          <svg class="cell__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2v.2a2 2 0 1 1-4 0v-.1A1.7 1.7 0 0 0 7 19.4a1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 2.6 14H2.4a2 2 0 1 1 0-4h.2A1.7 1.7 0 0 0 4.6 7a1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 10 2.6V2.4a2 2 0 1 1 4 0v.2a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0 1.2 2.9h.2a2 2 0 1 1 0 4h-.2a1.7 1.7 0 0 0-1.5 1.2Z" transform="scale(0.86) translate(1.6 1.6)"></path></svg>
+          <h3 class="cell__title">Enablement &amp; handover</h3>
+          <p>Pairing, architecture docs, runbooks and internal workshops. The deliverable is your team shipping the next release without us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= process -->
+  <section class="section">
+    <div class="shell">
+      <div class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow">How an engagement runs</p>
+          <h2 class="h2">Four steps, no black box.</h2>
+        </div>
+        <div class="sec-head__aside">
+          <p class="lede">We work in short, decision-shaped phases. Each one ends with something you can run, measure and keep — or a clear reason to stop.</p>
+        </div>
+      </div>
+
+      <div class="steps reveal">
+        <div class="step">
+          <span class="step__num">01 / diagnose</span>
+          <h3 class="step__title">Find the real constraint</h3>
+          <p>Two weeks with your data and your people. We map sources, permissions and the questions that actually go unanswered, then write down what “working” will mean.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">02 / prove</span>
+          <h3 class="step__title">Prove it on 200 real questions</h3>
+          <p>A thin vertical slice over your live corpus, scored against a golden set. You see retrieval quality and failure modes before committing to a build.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">03 / build</span>
+          <h3 class="step__title">Build it with your engineers</h3>
+          <p>Paired delivery in your repo and your cloud. Weekly demos, reviewable commits, infrastructure as code, and no hidden services on our side.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">04 / handover</span>
+          <h3 class="step__title">Leave you able to run it</h3>
+          <p>Eval harness wired into CI, runbooks, cost model, and a trained owner. Optional retainer for the quarter after launch, then you’re independent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== stats -->
+  <section aria-label="How we work, in numbers">
+    <div class="shell">
+      <div class="stats stats--4 reveal">
+        <div class="stat"><span class="stat__num">2 wks</span><p class="stat__label">From kickoff to a working retrieval prototype on your own corpus.</p></div>
+        <div class="stat"><span class="stat__num">7:1</span><p class="stat__label">Evaluation effort to prompt-tuning effort. Tests are the product.</p></div>
+        <div class="stat"><span class="stat__num">0</span><p class="stat__label">Proprietary services in the critical path. Swap the model, keep the system.</p></div>
+        <div class="stat"><span class="stat__num">100%</span><p class="stat__label">Source code, infrastructure and documentation transferred to you.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= taiwan -->
+  <section class="section" id="taiwan">
+    <div class="shell taiwan">
+      <div>
+        <p class="eyebrow">Where we are</p>
+        <h2 class="h2">Rooted in Taiwan, working across time zones.</h2>
+        <p class="body-copy">zzstudio is a small studio based in Taipei. We chose to build here because Taiwan sits close to the hardware, the semiconductor supply chain and an unusually deep pool of engineers who care about systems that hold up in production.</p>
+        <p class="body-copy">In practice that means we’re a short flight from most of Asia’s manufacturing and engineering teams, we work comfortably in both Mandarin and English, and we’re used to the constraints that come with regulated, on-premise and sovereignty-sensitive deployments.</p>
+
+        <ul class="facts">
+          <li><span class="k">Studio</span><span class="v">Taipei, Taiwan · remote-first with on-site workshops</span></li>
+          <li><span class="k">Coordinates</span><span class="v"><span class="mono">25.0330° N, 121.5654° E</span> · UTC+8</span></li>
+          <li><span class="k">Languages</span><span class="v">English, 繁體中文</span></li>
+          <li><span class="k">Deployment</span><span class="v">Your VPC, on-premise, or air-gapped</span></li>
+        </ul>
+      </div>
+
+      <figure class="figure reveal" style="background:var(--paper)">
+        <svg class="diagram" viewBox="0 0 420 260" role="img" aria-label="Coordinate crosshair marking Taipei at 25.0330 degrees north, 121.5654 degrees east">
+          <defs>
+            <pattern id="dotgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.1" fill="var(--rule-2)"></circle>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="420" height="260" fill="url(#dotgrid)"></rect>
+
+          <path class="wire" d="M20 130H400"></path>
+          <path class="wire" d="M210 20V240"></path>
+
+          <circle class="ring" cx="210" cy="130" r="64" fill="none" stroke="var(--clay)" stroke-width="1" stroke-dasharray="3 5" opacity=".55"></circle>
+          <circle cx="210" cy="130" r="30" fill="none" stroke="var(--clay)" stroke-width="1" opacity=".7"></circle>
+          <circle cx="210" cy="130" r="5.5" fill="var(--clay)"></circle>
+          <circle cx="210" cy="130" r="12" fill="var(--clay)" opacity=".12" class="pulse"></circle>
+
+          <path class="wire" d="M16 126v8M404 126v8M206 16h8M206 244h8"></path>
+
+          <text x="218" y="112">25.0330° N</text>
+          <text x="218" y="152">121.5654° E</text>
+          <text class="t-strong" x="24" y="30">Taipei</text>
+          <text x="24" y="46">UTC+8 · APAC</text>
+        </svg>
+        <figcaption class="figure__cap">
+          <span>Studio location</span>
+          <span>25.0330 N / 121.5654 E</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- =========================================================== quote -->
+  <section class="section section--tight">
+    <div class="shell">
+      <blockquote class="quote reveal">
+        <p>“A demo that impresses a room and a system that survives a Monday are different engineering problems. We only sell the second one.”</p>
+        <footer>— The zzstudio operating principle</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============================================================= cta -->
+  <section class="section">
+    <div class="shell">
+      <div class="cta reveal">
+        <div class="cta__body">
+          <p class="eyebrow">Next step</p>
+          <h2 class="h2">Start with a two-week diagnostic.</h2>
+          <p class="lede">Bring us your corpus and the questions your team keeps asking. We’ll come back with retrieved evidence, an honest read on feasibility, and a scoped plan — whether or not you build it with us.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--primary" href="contact.html">Book a working session <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn" href="solutions.html">Solution detail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

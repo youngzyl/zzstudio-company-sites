@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# build templates and repo docs are not part of the site
+Disallow: /tools/
+Disallow: /README.md
+
+Sitemap: https://zzstudio.youngzyl.me/sitemap.xml

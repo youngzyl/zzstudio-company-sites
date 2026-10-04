@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#ddd8cb"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#faf9f5"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#e2ded3" stroke-width="2"/>
+  <rect x="64" y="0" width="4" height="630" fill="#b8532f"/>
+
+  <!-- mark + wordmark -->
+  <g transform="translate(80 68)">
+    <rect width="52" height="52" rx="10" fill="#b8532f"/>
+    <path d="M14.5 33.5 26 15l11.5 18.5M18.7 28.4h14.6" stroke="#faf9f5" stroke-width="3.4" fill="none" stroke-linecap="square"/>
+    <text x="70" y="26" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="600" fill="#191817" letter-spacing="-0.5">zz<tspan fill="#b8532f">studio</tspan></text>
+    <text x="70" y="48" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#8b8479" letter-spacing="3.2">AI SOLUTIONS · TAIWAN</text>
+  </g>
+
+  <!-- headline -->
+  <text x="80" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#191817" letter-spacing="-1.5">Build AI that remembers,</text>
+  <text x="80" y="318" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="600" fill="#191817" letter-spacing="-1.5">acts, and <tspan fill="#b8532f">shows its work.</tspan></text>
+
+  <text x="80" y="370" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="21" fill="#6d675e">Hybrid context vaults · personal AI agents · skill management</text>
+
+  <!-- retrieval strip: question -> hybrid lanes -> fused -> cited answer -->
+  <g>
+    <!-- question -->
+    <rect x="80" y="422" width="200" height="44" rx="4" fill="#f2f0e9" stroke="#cec8ba"/>
+    <text x="96" y="450" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#191817">Where does this apply?</text>
+
+    <!-- fan out -->
+    <path d="M280 444H300" stroke="#cec8ba"/>
+    <path d="M300 416V472" stroke="#cec8ba"/>
+    <path d="M300 416H316M300 472H316" stroke="#cec8ba"/>
+    <circle cx="290" cy="444" r="3" fill="#b8532f"/>
+
+    <!-- lanes -->
+    <rect x="316" y="400" width="168" height="32" rx="4" fill="#faf9f5" stroke="#cec8ba"/>
+    <text x="332" y="421" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#191817">Lexical · BM25</text>
+
+    <rect x="316" y="456" width="168" height="32" rx="4" fill="#faf9f5" stroke="#cec8ba"/>
+    <text x="332" y="477" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#191817">Dense · vectors</text>
+
+    <!-- converge -->
+    <path d="M484 416H504M484 472H504" stroke="#cec8ba"/>
+    <path d="M504 416V472" stroke="#cec8ba"/>
+    <path d="M504 444H520" stroke="#b8532f"/>
+
+    <!-- fuse -->
+    <rect x="520" y="422" width="150" height="44" rx="4" fill="#faf9f5" stroke="#b8532f"/>
+    <text x="536" y="450" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#191817">Fuse + rerank</text>
+
+    <path d="M670 444H706" stroke="#b8532f"/>
+
+    <!-- cited answer -->
+    <rect x="706" y="422" width="200" height="44" rx="4" fill="#f2f0e9" stroke="#cec8ba"/>
+    <text x="722" y="443" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#191817">Cited answer</text>
+    <text x="722" y="459" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#6d675e">policy-v3.md §2.1</text>
+
+    <path d="M906 444H930" stroke="#cec8ba"/>
+
+    <!-- permission flag -->
+    <rect x="930" y="432" width="160" height="24" rx="3" fill="#faf9f5" stroke="#cec8ba"/>
+    <text x="946" y="448" font-family="ui-monospace, Menlo, monospace" font-size="11" fill="#8b8479" letter-spacing="1">ACL · INTERNAL</text>
+  </g>
+
+  <!-- footer rule -->
+  <path d="M80 528H1120" stroke="#e2ded3" stroke-width="1"/>
+  <text x="80" y="568" font-family="ui-monospace, Menlo, monospace" font-size="14" fill="#8b8479" letter-spacing="1.4">TAIPEI · 25.0330 N / 121.5654 E</text>
+  <text x="1120" y="568" text-anchor="end" font-family="ui-monospace, Menlo, monospace" font-size="14" fill="#8b8479" letter-spacing="1.4">zzstudio.youngzyl.me</text>
+</svg>

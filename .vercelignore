@@ -1,0 +1,7 @@
+# Files that are part of the repository but NOT part of the published site.
+# Keeps build templates and docs off public URLs on Vercel.
+# (GitHub Pages gets the same treatment via the staging step in the workflow.)
+
+tools/
+README.md
+.github/

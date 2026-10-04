@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — zzstudio</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#faf9f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141312" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b8532f'/%3E%3Cpath d='M9 20.5 16 9l7 11.5M11.6 17.4h8.8' stroke='%23faf9f5' stroke-width='2.1' fill='none' stroke-linecap='square'/%3E%3C/svg%3E">
+<!-- relative paths, so this page also works when served from a deep unknown URL -->
+<link rel="stylesheet" href="styles.css">
+<!-- critical fallback: if the stylesheet cannot resolve (deep 404 on GitHub Pages),
+     the page still looks deliberate rather than broken -->
+<style>
+  :root { color-scheme: light dark; }
+  html, body { margin: 0; min-height: 100%; }
+  body.zz-fallback {
+    background: #faf9f5; color: #191817;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+    display: grid; place-items: center; min-height: 100vh; padding: 24px;
+  }
+  body.zz-fallback h1 { font: 600 clamp(2rem, 5vw, 3rem)/1.1 Georgia, serif; letter-spacing: -.02em; margin: 0 0 12px; }
+  body.zz-fallback p { margin: 0 0 8px; color: #6d675e; max-width: 48ch; }
+  body.zz-fallback a { color: #b8532f; }
+  body.zz-fallback .zz-err { font-family: ui-monospace, Menlo, monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #b8532f; margin-bottom: 16px; }
+  @media (prefers-color-scheme: dark) {
+    body.zz-fallback { background: #141312; color: #ece7de; }
+    body.zz-fallback p { color: #9b938a; }
+    body.zz-fallback a { color: #e2a07a; }
+    body.zz-fallback .zz-err { color: #e2a07a; }
+  }
+</style>
+</head>
+<body class="zz-fallback">
+
+<main>
+  <p class="zz-err">Error 404</p>
+  <h1>That page isn’t here.</h1>
+  <p>The link may be old, or the page may have moved. Nothing is broken on your side.</p>
+  <p><a href="index.html">Back to zzstudio →</a></p>
+  <p style="margin-top:24px;font-size:13px">Or write to <a href="mailto:hello@zzstudio.youngzyl.me">hello@zzstudio.youngzyl.me</a> and we’ll point you at the right place.</p>
+</main>
+
+</body>
+</html>
